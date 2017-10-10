@@ -1,1 +1,6 @@
-<h1>Home Page</h1>
+<h1 class="chat-title"> Bloc Chat </h1>
+  <table>
+    <tr class="room-array-table container">
+      <td class="room-array-item" ng-repeat="room in home.roomArray"> {{ room.$id }} </td>
+    </tr>
+  </table>
