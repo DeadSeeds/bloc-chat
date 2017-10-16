@@ -1,1 +1,12 @@
-<h1>Home Page</h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div h1 class="chat-title"> Bloc Chat </h1></div>
+        <div ng-controller="ModalCtrl as modals">
+        <button type="button" class="btn btn-default room-button" ng-click="modals.open()">New Room</button>
+        </div>
+        <div class="room-array-item" ng-repeat="room in home.roomArray"> {{ room.$value }} </div>
+    </div>
+    <div class="col-9">Content</div>
+  </div>
+</div>
