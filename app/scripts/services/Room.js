@@ -10,6 +10,10 @@
       rooms.$add(newRoom);
     };
 
+    Room.getRoomById = function(id) {
+      return rooms.$getRecord(id);
+    };
+
     return Room;
   }
 
