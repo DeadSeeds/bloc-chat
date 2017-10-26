@@ -9,7 +9,7 @@
       var messages = $firebaseArray(ref);
       return messages;
     };
-
+    //console.log(messages);
     return Message;
   }
 

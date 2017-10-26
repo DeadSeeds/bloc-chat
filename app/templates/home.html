@@ -1,14 +1,16 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col fill">
-      <div h1 class="chat-title"> Bloc Chat </h1></div>
-      <div ng-controller="ModalCtrl as modals">
-        <button type="button" class="btn btn-default room-button" ng-click="modals.open()">New Room</button>
+      <div class="header">
+        <h1 class="chat-title">Bloc Chat </h1>
+        <a class="right btn btn-default room-button" ng-controller="ModalCtrl as modals" ng-click="modals.open()">New Room</a>
       </div>
       <div class="room-array-item" ng-click="home.setRoom(room.$id)" ng-repeat="room in home.roomArray"> <p> {{ room.$value }} </p></div>
     </div>
-    <div class="col-8"> <h1>{{ home.room.$value }}</h1>
-      <div> <p> {{ home.messages[0].content }} </p> </div>
+    <div class="col-8 white-background"> <h1>{{ home.room.$value }}</h1>
+      <div ng-repeat="message in home.messages">
+        <p> {{ message.content }} </p>
+      </div>
     </div>
   </div>
 </div>

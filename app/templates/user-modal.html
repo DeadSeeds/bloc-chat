@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <h3 class="modal-title">Set a username (required)</h3>
+</div>
+<div class="modal-body">
+  This name will appear when you send messages:
+  <br/>
+  <form>
+    <div class="input-group animated fadeIn">
+      <input type="text" name="userName" ng-model="UserModal.userName" autofocus placeholder="DingDong01">
+    </div>
+  </form>
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-primary" type="button" ng-click="UserModal.ok()">Set Username</button>
+</div>

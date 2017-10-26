@@ -24,14 +24,26 @@ body {
   padding: 1rem;
   font-size: 2.5rem;
   font-weight: 600;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: gray !important;
+  border-color: gray !important;
+}
+
+.btn-warning {
+  background-color: lightgray !important;
+  border-color: lightgray !important;
 }
 
 .room-button {
   position: relative;
   left: 6px;
+  top: -10px;
   background-color: #F5F5F5;
   color: gray;
-
+  display: inline-block;
 }
 
 .room-array-item {
@@ -39,6 +51,6 @@ body {
   font-size: 1.25rem;
 }
 
-.col-8 {
+.white-background {
   background-color: white;
 }
