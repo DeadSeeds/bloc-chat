@@ -9,6 +9,14 @@
       var messages = $firebaseArray(ref);
       return messages;
     };
+
+    Message.send = function(newMessage) {
+      //var newMessage = {};
+      var ref = firebase.database().ref().child('messages').orderByChild('roomId').equalTo(newMessage.roomId);
+      var messages = $firebaseArray(ref);
+      messages.$add(newMessage);
+    };
+
     //console.log(messages);
     return Message;
   }

@@ -30,6 +30,7 @@ body {
 .btn-primary {
   background-color: gray !important;
   border-color: gray !important;
+  color: white !important;
 }
 
 .btn-warning {
@@ -44,6 +45,25 @@ body {
   background-color: #F5F5F5;
   color: gray;
   display: inline-block;
+}
+
+.message-stamp {
+  float: right;
+  color: lightgray;
+}
+
+.message-btn {
+  position: relative;
+  margin: 10px;
+}
+
+.input-fixed {
+  position: fixed;
+  bottom: 0px;
+}
+
+.wide-input {
+  width: 45vw;
 }
 
 .room-array-item {
