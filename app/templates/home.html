@@ -9,7 +9,7 @@
     </div>
     <div class="col-8 white-background"> <h1>{{ home.room.$value }}</h1>
       <div ng-repeat="message in home.messages">
-        <p> {{ message.content }} <span class="message-stamp">{{ message.sentAt | date: 'medium' }}</span></p>
+        <p> <span class="message-username">{{ message.username + ":"  }}</span> <span>{{ message.content }}</span> <span class="message-stamp">{{ message.sentAt | date: 'medium' }}</span></p>
       </div>
       <div ng-show="home.messages" class="input-fixed">
         <input type="text" class="wide-input" ng-model="home.messageBody"></input>

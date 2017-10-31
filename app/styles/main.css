@@ -53,17 +53,26 @@ body {
 }
 
 .message-btn {
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  right: 0;
   margin: 10px;
+}
+
+.message-username {
+  font-weight: 600;
+  color: darkred;
 }
 
 .input-fixed {
   position: fixed;
-  bottom: 0px;
+  bottom: 13px;
+  border: 2px solid;
+  border-color: darkgray;
 }
 
 .wide-input {
-  width: 45vw;
+  width: 47vw;
 }
 
 .room-array-item {
